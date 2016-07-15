@@ -1,6 +1,6 @@
 {
   "name": "react-ddos-map",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A react component to display DDos attack",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/slashtu/react-ddos-map/issues"
   },
-  "homepage": "https://github.com/slashtu/react-ddos-map#readme"
+  "homepage": "https://github.com/slashtu/react-ddos-map#readme",
+  "dependencies": {
+    "react": "^15.2.1"
+  },
+  "peerDependencies": {
+    "react": ">= 0.14.0",
+    "react-dom": ">= 0.14.0"
+  }
 }
