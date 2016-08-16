@@ -2,8 +2,12 @@
   "name": "react-ddos-map",
   "version": "1.0.4",
   "description": "A react component to display DDos attack",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "demo": "./node_modules/.bin/webpack --config webpack.demo.config.js --watch",
+    "build": "babel src --out-dir dist",
+    "watch": "babel src --watch --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,9 @@
     "url": "git+https://github.com/slashtu/react-ddos-map.git"
   },
   "keywords": [
-    "ddos"
+    "ddos",
+    "d3",
+    "react"
   ],
   "author": "Slash Tu",
   "license": "MIT",
@@ -19,11 +25,21 @@
     "url": "https://github.com/slashtu/react-ddos-map/issues"
   },
   "homepage": "https://github.com/slashtu/react-ddos-map#readme",
-  "dependencies": {
-    "react": "^15.2.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": ">= 0.14.0",
     "react-dom": ">= 0.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "webpack": "^1.13.1"
   }
 }
