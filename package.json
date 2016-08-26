@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/slashtu/react-ddos-map#readme",
   "dependencies": {
-    "d3": "^4.2.2"
+    "d3": "^4.2.2",
+    "topojson": "^1.6.26"
   },
   "peerDependencies": {
     "react": ">= 0.14.0",

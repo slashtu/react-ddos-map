@@ -18,11 +18,16 @@ module.exports = {
             loader: 'babel',
             query: {
               presets: ['react', 'es2015'],
-              plugins: ['transform-object-rest-spread']
+              plugins: ['transform-object-rest-spread'],
+              compact: false
             }
     
         },
         { test: /\.json$/, loader: require.resolve("json-loader") }
       ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
